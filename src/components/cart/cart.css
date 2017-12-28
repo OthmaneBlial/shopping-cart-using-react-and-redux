@@ -1,0 +1,41 @@
+
+.cart-item {
+	border: solid 3px #135e7f;
+	padding: 10px;
+	border-radius: 10px;
+	letter-spacing: 2px;
+	max-width: 400px;
+}
+
+.cart-item h1 {
+	font-size: 21px;
+	font-weight: 400;
+	margin: 4px;
+}
+
+.cart-item h2 {
+	font-size: 19px;
+	font-weight: 700;
+	margin: 6px;
+}
+
+.cart-item button {
+	background-color: #135e7f;
+	padding: 3px 4px;
+	font-size: 20px;
+	outline: none;
+	border: 0;
+	color: #fff;
+	margin: 2px;
+}
+
+.cart-icon {
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+.cart-icon span {
+	margin-left: 10px;
+	font-size: 18px;
+	margin-top: -10px;
+}

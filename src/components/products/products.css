@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Rajdhani');
+
+html, body, h1, h2, h3, input, button {
+  font-family: 'Electrolize', sans-serif;
+}
+
+.products-list-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  z-index: -5;
+}
+
+.product-item-container {
+	margin: 5px 10px;
+}
+
+
+.product-item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
+}
+
+.product-item *,
+.product-item:before,
+.product-item:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.product-item img {
+  max-width: 100%;
+  width: 230px;
+  height: 250px;
+  backface-visibility: hidden;
+  vertical-align: top;
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+
+.product-item:before,
+.product-item:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.product-item:before {
+  width: 0;
+  height: 1px;
+}
+
+.product-item:after {
+  height: 0;
+  width: 1px;
+}
+
+.product-item figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+.product-item h3 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+
+
+.product-item:hover img,
+.product-item.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+
+
+.product-item:hover:before,
+.product-item.hover:before,
+.product-item:hover:after,
+.product-item.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.product-item:hover:before,
+.product-item.hover:before {
+  width: 40px;
+}
+
+.product-item:hover:after,
+.product-item.hover:after {
+  height: 40px;
+}
+
+.product-item:hover h3,
+.product-item.hover h3 {
+  opacity: 1;
+}
+
+.product-item:hover h3,
+.product-item.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+
+.products-search-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.products-search-container input {
+	min-width: 200px;
+	max-width: 600px;
+	font-size: 30px;
+	padding: 10px;
+	border-radius: 7px;
+}
+
+.products-list-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.products-list-buttons-container a {
+  width: 200px;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
